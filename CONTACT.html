@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+			color: black;
+        }
+		body {
+            padding: 20px;
+        }
+		header {
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: rotateX(0deg);
+		}
+		header h1 {
+            font-size: 2.2em;
+			font-style: italic;
+        }
+		nav {
+            background-color: #18392B; /*dark green*/
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border: 2px solid black;
+        }
+		nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 12px;
+            transition: transform 0.3s;
+            color: white;
+        }
+		.cafe {
+            margin-bottom: 60px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .cafe img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+}
+      	.form-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]{
+        	color: blue;
+        	padding: 10px 20px;
+        	border: blue solid 1px;
+        	border-radius: 20px;
+        	cursor: pointer;
+        	width: 200px;
+        	margin-left: calc(35% - 35px - 8px);
+		}
+</style>
+</head>
+<body>
+	<header>
+        <h1>Contact Us</h1>
+        <p style="color:white">Domain: <strong style="color:white">www.makaticoffeehub.free</strong></p>
+    </header>
+
+    <nav>
+        <a href="HOMES.html">Home</a>
+        <a href="ABOUT.html">About us</a>
+        <a href="PRODUCTS.html">Products</a>
+        <a href="GALLERY.html">Gallery</a>
+        <a href="CONTACT.html">Contact us</a>
+    </nav>
+    <br><br><br>
+    <div class="container">
+    <div class="form-section" id="form">
+            <h2 style="text-align:center; color:black">💬 Leave Your Feedback</h2><br>
+            <form action="tenkyu.html" name="myForm" onsubmit="return (validate());">
+                First Name<br><input type="text" name="fname" placeholder="Enter first name">
+				Email Address<br><input type="text" name="email" placeholder="Enter email address"/>
+				Password<br><input type="password" name="pass" placeholder="Enter new password"/>
+				Confirm Password<br><input type="password" name="vpass" placeholder="Repeat your password"/>
+				Date of Birth<br><input type="date" name="bday"/><br>
+				<input type="submit" value="Sign Up">
+            </form>
+        </div>
+  </div>
+    	
+		<footer>
+            <br><br>
+            <p style="margin-top: 20px;">Contact us<br>+63-915-096-2303<br>wackyalfonsoo@gmail.com</p>
+        </footer>
+
+<script type="text/javascript">
+function validate() {
+    if (document.myForm.fname.value === "") {
+        alert("Please provide your First Name!");
+        document.myForm.fname.focus();
+        return false;
+    }
+    
+    if (document.myForm.email.value === "") {
+        alert("Please provide your Email!");
+        document.myForm.email.focus();
+        return false;
+    }
+
+    if (document.myForm.pass.value === "") {
+        alert("Please provide your Password!");
+        document.myForm.pass.focus();
+        return false;
+    }
+
+    if (document.myForm.vpass.value === "") {
+        alert("Please provide your Confirmation Password!");
+        document.myForm.vpass.focus();
+        return false;
+    }
+
+    if (document.myForm.bday.value === "") {
+        alert("Please provide your Date of Birth!");
+        document.myForm.bday.focus();
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>
+

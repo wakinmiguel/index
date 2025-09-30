@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+			color: black;
+        }
+		body {
+            padding: 20px;
+        }
+		header {
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transform: rotateX(0deg);
+		}
+		header h1 {
+            font-size: 2.2em;
+			font-style: italic;
+        }
+		nav {
+            background-color: #18392B; /*dark green*/
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border: 2px solid black;
+        }
+		nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 12px;
+            transition: transform 0.3s;
+            color: white;
+        }
+		.cafe {
+            margin-bottom: 60px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .cafe img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+    		display: flex;
+    		align-items: flex-start; /* keeps items aligned at the top */
+    		min-height: 100vh; /* ensures it’s at least screen height but grows if needed */
+		}
+
+        .left {
+      		flex: 7;   /* 70% */
+      		padding: 20px;
+    	}
+
+    	.right {
+      		flex: 3;   /* 30% */
+      		background-color: #f0f0f0;
+      		padding: 20px;
+      		text-align: center;
+      	}
+      	.right img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }	
+</style>
+</head>
+<body>
+	<header>
+        <h1>About Us</h1>
+        <p style="color:white">Domain: <strong style="color:white">www.makaticoffeehub.free</strong></p>
+    </header>
+
+    <nav>
+    	<a href="HOMES.html">Home</a>
+        <a href="ABOUT.html">About us</a>
+        <a href="PRODUCTS.html">Products</a>
+        <a href="GALLERY.html">Gallery</a>
+        <a href="CONTACT.html">Contact us</a>
+    </nav>
+    
+    <div class="container">
+  <div class="left">
+    <h2>Our Story</h2>
+    <p>Starbucks began in 1971 as a small store in Seattle, Washington, selling high-quality coffee beans and brewing equipment. Since then, we have grown into one of the world’s most recognized coffee brands, serving millions of customers every day in over 80 countries. In the Philippines, our journey started in 1997 with the first branch at 6750 Ayala Avenue, Makati City. Today, Starbucks has become part of the Filipino coffee culture, bringing people together over coffee and community.</p>
+
+    <h2>Our Mission</h2>
+    <p>Our mission is simple: <em>to inspire and nurture the human spirit—one person, one cup, and one neighborhood at a time.</em> We believe that coffee is more than just a beverage; it is an experience that connects people and creates moments of warmth and belonging.</p>
+
+    <h2>How We Treat Our Customers</h2>
+    <p>At Starbucks, every customer is a guest. We strive to create a welcoming atmosphere in every store, ensuring that each visit feels personal and memorable. Our baristas are trained not only to serve quality handcrafted beverages but also to greet customers with genuine warmth and care. Whether it’s remembering your favorite order or simply offering a smile, we aim to make your day a little brighter.</p>
+
+    <h2>Our Commitment</h2>
+    <p>We are committed to sustainability, ethical sourcing of coffee beans, and supporting communities where we do business. Beyond coffee, we value inclusivity, respect, and building connections. Starbucks continues to innovate while holding true to its mission of creating a space where everyone feels welcome.</p>
+  </div>
+
+  <div class="right">
+    <h3>Our Core Values</h3>
+    <ul>
+      <li>Warmth and Belonging</li>
+      <li>Quality Coffee and Service</li>
+      <li>Respect and Inclusivity</li>
+      <li>Ethical Sourcing & Sustainability</li>
+      <li>Connection with Communities</li>
+    </ul>
+    <br>
+    <img src="data:image/jpeg;base64,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" alt="Starbucks Store" style="width:100%; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+    <p style="text-align:center; margin-top:10px;">A place where coffee meets community</p><br><br>
+    <img id="img1" src="https://archive.starbucks.com/uploads/2018/12/thumb-24-hero-960x960.jpg" class="ODD">
+      <p class="branch">(First Branch of Starbucks).</p>
+  </div>
+</div>
+
+    	
+		<footer>
+            <br><br>
+            <p style="margin-top: 20px;">Contact us<br>+63-915-096-2303<br>wackyalfonsoo@gmail.com</p>
+        </footer>
+
+</body>
+</html>
+

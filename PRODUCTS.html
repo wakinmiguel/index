@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+			color: black;
+        }
+		body {
+            padding: 20px;
+        }
+		header {
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+		header h1 {
+            font-size: 2.2em;
+			font-style: italic;
+        }
+		nav {
+            background-color: #18392B; /*dark green*/
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            border: 2px solid black;
+        }
+		nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 12px;
+            transition: transform 0.3s;
+            color: white;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+      		display: flex;
+      		min-height: 80vh; /* better flexibility */
+    	}
+        .left {
+      		flex: 7;   /* 70% */
+      		padding:80px;
+            line-height: 1.8;
+            text-align: justify;
+    	}
+
+    	.right {
+      		flex: 3;   /* 30% */
+      		background-color: #f0f0f0;
+      		padding: 20px;
+            text-align: center;
+            border: 2px solid black;
+      	}
+        .right img {
+            max-width: 50%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+</style>
+</head>
+<body>
+	<header>
+        <h1>Products</h1>
+        <p style="color:white">Domain: <strong style="color:white">www.makaticoffeehub.free</strong></p>
+    </header>
+
+    <nav>
+        <a href="HOMES.html">Home</a>
+        <a href="ABOUT.html">About us</a>
+        <a href="PRODUCTS.html">Products</a>
+        <a href="GALLERY.html">Gallery</a>
+        <a href="CONTACT.html">Contact us</a>
+    </nav>
+    
+    <div class="container">
+    <div class="left">
+      <h1>Our Starbucks Favorites</h1><br>
+      <p><strong>Coffee & Brewed Beverages:</strong> Starbucks is known for its freshly brewed coffee, ranging from the classic Pike Place Roast to seasonal blends that highlight unique flavors from around the world.</p>
+      <br>
+      <p><strong>Espresso Beverages:</strong> From creamy lattes and cappuccinos to bold Americanos and macchiatos, Starbucks offers handcrafted espresso drinks that can be customized with different syrups and milk options.</p>
+      <br>
+      <p><strong>Frappuccino® Blended Beverages:</strong> A customer favorite, the Frappuccino comes in a wide range of flavors such as Mocha, Caramel, Java Chip, and seasonal limited editions like Pumpkin Spice or Peppermint Mocha.</p>
+      <br>
+      <p><strong>Teas & Refreshers:</strong> Starbucks also serves Teavana® teas, including green tea, chai tea, and fruit-based iced teas. Their Refreshers are light, fruity, and energizing drinks, perfect for a tropical climate like the Philippines.</p>
+      <br>
+      <p><strong>Bakery & Food:</strong> Starbucks pairs drinks with delicious pastries, sandwiches, cakes, and protein boxes. Popular items include their signature cheesecake, croissants, and breakfast sandwiches.</p>
+    </div>
+    
+    <div class="right">
+      <h3>Featured Items</h3><br>
+      <img src="https://cloudassets.starbucks.com/is/image/sbuxcorp/SBX20211029_CaramelMacchiato?impolicy=1by1_wide_topcrop_630&crop=180,360,1440,1440&wid=630&hei=630&qlt=85" alt="Caramel Macchiato">
+      <p>Caramel Macchiato</p>
+      <br><br>
+      <img src="https://tb-static.uber.com/prod/image-proc/processed_images/23b3eea4b802bb805ad7f13d3fd78789/0fb376d1da56c05644450062d25c5c84.jpeg" alt="Mocha Frappuccino">
+      <p>Mocha Frappuccino</p>
+      <br><br>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8XiQ5LnqsYY-0A2eVyP48PVdLQ68EB4x3_w&s" alt="Chocolate Croissant">
+      <p>Chocolate Croissant</p>
+    </div>
+  </div>
+    	
+		<footer>
+            <br><br>
+            <p style="margin-top: 20px;">Contact us<br>+63-915-096-2303<br>wackyalfonsoo@gmail.com</p>
+        </footer>
+
+</body>
+</html>
